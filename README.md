@@ -7,10 +7,15 @@ Este projeto tem como objetivo **monitorar remotamente a temperatura, umidade, l
 ## 📁 Estrutura do Projeto
 
 ├── src/
+
 │ └── main.cpp # Código principal do ESP32
+
 ├── docs/
+
 │ └── dashboard-thingspeak.png 
+
 ├── .gitignore
+
 ├── README.md
 
 
