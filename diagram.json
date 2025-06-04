@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "author": "Caio HC",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 9.6, "left": 158.44, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -154.9, "left": 28.6, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -162.9, "left": -226.2, "attrs": {} },
+    { "type": "wokwi-photoresistor-sensor", "id": "ldr1", "top": -35.2, "left": 308, "attrs": {} }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "dht1:SDA", "esp:12", "green", [ "v0" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "pot1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "pot1:SIG", "esp:34", "green", [ "v0" ] ],
+    [ "pot1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "h-336", "v57.6" ] ],
+    [ "ldr1:GND", "esp:GND.1", "black", [ "h-124.8", "v239.6", "h-220.8", "v-67.2" ] ],
+    [ "ldr1:AO", "esp:35", "green", [ "h-336", "v76.1" ] ]
+  ],
+  "dependencies": {}
+}
