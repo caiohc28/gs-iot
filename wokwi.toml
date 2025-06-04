@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+elf = "../.pio/build/gs-iot/firmware.elf"
+firmware = "../.pio/build/gs-iot/firmware.bin"
