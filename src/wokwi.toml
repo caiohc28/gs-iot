@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+name = "GS IoT"
+board = "esp32-devkit-v1"
