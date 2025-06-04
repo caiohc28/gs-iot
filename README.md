@@ -61,7 +61,7 @@ Todos os dados são enviados à nuvem via ThingSpeak, permitindo visualização 
 ## 🧪 Como Executar
 
 ### 1.1 Clonagem do repositório 
-####### (Caso não rode pelo VSCode, teste por aqui: https://wokwi.com/projects/432777992511432705)
+(Caso não rode pelo VSCode, teste por aqui: https://wokwi.com/projects/432777992511432705)
 
 ``
 git clone https://github.com/caiohc28/gs-iot.git
