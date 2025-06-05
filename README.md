@@ -34,7 +34,19 @@ Todos os dados são enviados à nuvem via ThingSpeak, permitindo visualização 
 ### Montagem física:
 ![image](https://github.com/user-attachments/assets/bb7f3ead-b214-4766-84c3-8d05875de7d8)
 
+## Fluxo de Dados
+ESP32 → Sensores → Processamento → ThingSpeak → Dashboard
 
+## Exemplo de Dados Coletados
+| Timestamp | Temp(°C) | Umidade(%) | Luminosidade | Status |
+|-----------|----------|------------|--------------|---------|
+| 14:30:25  | 28.5     | 65         | 450          | Normal  |
+| 14:31:25  | 35.2     | 58         | 480          | Alerta  |
+
+## Troubleshooting
+- **WiFi não conecta**: Verificar SSID/senha
+- **Sensor não responde**: Verificar conexões DHT11
+- **ThingSpeak erro**: Validar API Key
 
 
 ### Dashboard no ThingSpeak:
